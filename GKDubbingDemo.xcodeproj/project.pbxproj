@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60EE04E72190209C006B4159 /* bgm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 60EE04E62190209C006B4159 /* bgm.m4a */; };
+		60EE052321928571006B4159 /* GKAudioRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EE052221928571006B4159 /* GKAudioRecorder.framework */; };
+		7944C2ED218DE8A70058B31E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C2EC218DE8A70058B31E /* AppDelegate.m */; };
+		7944C2F5218DE8A80058B31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7944C2F4218DE8A80058B31E /* Assets.xcassets */; };
+		7944C2F8218DE8A80058B31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7944C2F6218DE8A80058B31E /* LaunchScreen.storyboard */; };
+		7944C2FB218DE8A80058B31E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C2FA218DE8A80058B31E /* main.m */; };
+		7944C305218DE8A80058B31E /* GKDubbingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C304218DE8A80058B31E /* GKDubbingDemoTests.m */; };
+		7944C310218DE8A80058B31E /* GKDubbingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C30F218DE8A80058B31E /* GKDubbingDemoUITests.m */; };
+		7944C325218DE9760058B31E /* effmusicinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7944C321218DE9760058B31E /* effmusicinfo.plist */; };
+		7944C327218DE9760058B31E /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7944C323218DE9760058B31E /* test.mp4 */; };
+		7944C328218DE9760058B31E /* eff.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7944C324218DE9760058B31E /* eff.bundle */; };
+		7944C331218DE9960058B31E /* GKDubbingEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C32A218DE9960058B31E /* GKDubbingEditViewController.m */; };
+		7944C332218DE9960058B31E /* GKDubbingRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C32C218DE9960058B31E /* GKDubbingRecordViewController.m */; };
+		7944C333218DE9960058B31E /* GKDubbingPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C32D218DE9960058B31E /* GKDubbingPublishViewController.m */; };
+		7944C334218DE9960058B31E /* GKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C330218DE9960058B31E /* GKBaseViewController.m */; };
+		7944C337218DE9AF0058B31E /* GKDubbingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C336218DE9AF0058B31E /* GKDubbingManager.m */; };
+		7944C33A218DEA5D0058B31E /* GKVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C339218DEA5D0058B31E /* GKVideoPlayer.m */; };
+		7944C340218EBEC30058B31E /* GKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C33F218EBEC30058B31E /* GKButton.m */; };
+		7944C344218EC3130058B31E /* GKSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C343218EC3130058B31E /* GKSliderView.m */; };
+		7994AA4D218EEE5E00B9B251 /* GKEffectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994AA4C218EEE5E00B9B251 /* GKEffectCollectionViewCell.m */; };
+		EB0DB73084B25FCD9E0F2784 /* Pods_GKDubbingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAC4189E22B1077467BAECA /* Pods_GKDubbingDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7944C301218DE8A80058B31E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7944C2E0218DE8A70058B31E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7944C2E7218DE8A70058B31E;
+			remoteInfo = GKDubbingDemo;
+		};
+		7944C30C218DE8A80058B31E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7944C2E0218DE8A70058B31E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7944C2E7218DE8A70058B31E;
+			remoteInfo = GKDubbingDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EAC4189E22B1077467BAECA /* Pods_GKDubbingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKDubbingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2139C1AEE0AFFBB85D44D5A8 /* Pods-GKDubbingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKDubbingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		60EE04E62190209C006B4159 /* bgm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bgm.m4a; sourceTree = "<group>"; };
+		60EE052221928571006B4159 /* GKAudioRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GKAudioRecorder.framework; sourceTree = "<group>"; };
+		6452B6C984A7C0E110FFDDB5 /* Pods-GKDubbingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKDubbingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7944C2E8218DE8A70058B31E /* GKDubbingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKDubbingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7944C2EB218DE8A70058B31E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7944C2EC218DE8A70058B31E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7944C2F4218DE8A80058B31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7944C2F7218DE8A80058B31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7944C2F9218DE8A80058B31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7944C2FA218DE8A80058B31E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7944C300218DE8A80058B31E /* GKDubbingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKDubbingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7944C304218DE8A80058B31E /* GKDubbingDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKDubbingDemoTests.m; sourceTree = "<group>"; };
+		7944C306218DE8A80058B31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7944C30B218DE8A80058B31E /* GKDubbingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKDubbingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7944C30F218DE8A80058B31E /* GKDubbingDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKDubbingDemoUITests.m; sourceTree = "<group>"; };
+		7944C311218DE8A80058B31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7944C321218DE9760058B31E /* effmusicinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = effmusicinfo.plist; sourceTree = "<group>"; };
+		7944C323218DE9760058B31E /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		7944C324218DE9760058B31E /* eff.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eff.bundle; sourceTree = "<group>"; };
+		7944C329218DE9960058B31E /* GKDubbingEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDubbingEditViewController.h; sourceTree = "<group>"; };
+		7944C32A218DE9960058B31E /* GKDubbingEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDubbingEditViewController.m; sourceTree = "<group>"; };
+		7944C32B218DE9960058B31E /* GKDubbingRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDubbingRecordViewController.h; sourceTree = "<group>"; };
+		7944C32C218DE9960058B31E /* GKDubbingRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDubbingRecordViewController.m; sourceTree = "<group>"; };
+		7944C32D218DE9960058B31E /* GKDubbingPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDubbingPublishViewController.m; sourceTree = "<group>"; };
+		7944C32E218DE9960058B31E /* GKDubbingPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDubbingPublishViewController.h; sourceTree = "<group>"; };
+		7944C32F218DE9960058B31E /* GKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBaseViewController.h; sourceTree = "<group>"; };
+		7944C330218DE9960058B31E /* GKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBaseViewController.m; sourceTree = "<group>"; };
+		7944C335218DE9AF0058B31E /* GKDubbingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKDubbingManager.h; sourceTree = "<group>"; };
+		7944C336218DE9AF0058B31E /* GKDubbingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKDubbingManager.m; sourceTree = "<group>"; };
+		7944C338218DEA5D0058B31E /* GKVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKVideoPlayer.h; sourceTree = "<group>"; };
+		7944C339218DEA5D0058B31E /* GKVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKVideoPlayer.m; sourceTree = "<group>"; };
+		7944C33E218EBEC30058B31E /* GKButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKButton.h; sourceTree = "<group>"; };
+		7944C33F218EBEC30058B31E /* GKButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKButton.m; sourceTree = "<group>"; };
+		7944C342218EC3130058B31E /* GKSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKSliderView.h; sourceTree = "<group>"; };
+		7944C343218EC3130058B31E /* GKSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKSliderView.m; sourceTree = "<group>"; };
+		7944C348218ED4310058B31E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7994AA4B218EEE5E00B9B251 /* GKEffectCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKEffectCollectionViewCell.h; sourceTree = "<group>"; };
+		7994AA4C218EEE5E00B9B251 /* GKEffectCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKEffectCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7944C2E5218DE8A70058B31E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0DB73084B25FCD9E0F2784 /* Pods_GKDubbingDemo.framework in Frameworks */,
+				60EE052321928571006B4159 /* GKAudioRecorder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944C2FD218DE8A80058B31E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944C308218DE8A80058B31E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7944C2DF218DE8A70058B31E = {
+			isa = PBXGroup;
+			children = (
+				7944C2EA218DE8A70058B31E /* GKDubbingDemo */,
+				7944C303218DE8A80058B31E /* GKDubbingDemoTests */,
+				7944C30E218DE8A80058B31E /* GKDubbingDemoUITests */,
+				7944C2E9218DE8A70058B31E /* Products */,
+				BE07743CF90F1E6A9A18E588 /* Pods */,
+				B47A892A14CF9456582214B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7944C2E9218DE8A70058B31E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7944C2E8218DE8A70058B31E /* GKDubbingDemo.app */,
+				7944C300218DE8A80058B31E /* GKDubbingDemoTests.xctest */,
+				7944C30B218DE8A80058B31E /* GKDubbingDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7944C2EA218DE8A70058B31E /* GKDubbingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7944C320218DE9650058B31E /* Resources */,
+				7944C31F218DE9530058B31E /* Classes */,
+				7944C2EB218DE8A70058B31E /* AppDelegate.h */,
+				7944C2EC218DE8A70058B31E /* AppDelegate.m */,
+				7944C2F4218DE8A80058B31E /* Assets.xcassets */,
+				7944C2F6218DE8A80058B31E /* LaunchScreen.storyboard */,
+				7944C2F9218DE8A80058B31E /* Info.plist */,
+				7944C2FA218DE8A80058B31E /* main.m */,
+				7944C348218ED4310058B31E /* PrefixHeader.pch */,
+				60EE052221928571006B4159 /* GKAudioRecorder.framework */,
+			);
+			path = GKDubbingDemo;
+			sourceTree = "<group>";
+		};
+		7944C303218DE8A80058B31E /* GKDubbingDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7944C304218DE8A80058B31E /* GKDubbingDemoTests.m */,
+				7944C306218DE8A80058B31E /* Info.plist */,
+			);
+			path = GKDubbingDemoTests;
+			sourceTree = "<group>";
+		};
+		7944C30E218DE8A80058B31E /* GKDubbingDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7944C30F218DE8A80058B31E /* GKDubbingDemoUITests.m */,
+				7944C311218DE8A80058B31E /* Info.plist */,
+			);
+			path = GKDubbingDemoUITests;
+			sourceTree = "<group>";
+		};
+		7944C31F218DE9530058B31E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7944C33D218EBEAB0058B31E /* Controller */,
+				7944C33C218EBEA50058B31E /* View */,
+				7944C33B218EBE970058B31E /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7944C320218DE9650058B31E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60EE04E62190209C006B4159 /* bgm.m4a */,
+				7944C324218DE9760058B31E /* eff.bundle */,
+				7944C321218DE9760058B31E /* effmusicinfo.plist */,
+				7944C323218DE9760058B31E /* test.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7944C33B218EBE970058B31E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7944C345218EC31F0058B31E /* GKVideoPlayer */,
+				7944C341218EC3130058B31E /* GKSliderView */,
+				7944C335218DE9AF0058B31E /* GKDubbingManager.h */,
+				7944C336218DE9AF0058B31E /* GKDubbingManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		7944C33C218EBEA50058B31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7944C33E218EBEC30058B31E /* GKButton.h */,
+				7944C33F218EBEC30058B31E /* GKButton.m */,
+				7994AA4B218EEE5E00B9B251 /* GKEffectCollectionViewCell.h */,
+				7994AA4C218EEE5E00B9B251 /* GKEffectCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7944C33D218EBEAB0058B31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7944C32F218DE9960058B31E /* GKBaseViewController.h */,
+				7944C330218DE9960058B31E /* GKBaseViewController.m */,
+				7944C32B218DE9960058B31E /* GKDubbingRecordViewController.h */,
+				7944C32C218DE9960058B31E /* GKDubbingRecordViewController.m */,
+				7944C329218DE9960058B31E /* GKDubbingEditViewController.h */,
+				7944C32A218DE9960058B31E /* GKDubbingEditViewController.m */,
+				7944C32E218DE9960058B31E /* GKDubbingPublishViewController.h */,
+				7944C32D218DE9960058B31E /* GKDubbingPublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7944C341218EC3130058B31E /* GKSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				7944C342218EC3130058B31E /* GKSliderView.h */,
+				7944C343218EC3130058B31E /* GKSliderView.m */,
+			);
+			path = GKSliderView;
+			sourceTree = "<group>";
+		};
+		7944C345218EC31F0058B31E /* GKVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7944C338218DEA5D0058B31E /* GKVideoPlayer.h */,
+				7944C339218DEA5D0058B31E /* GKVideoPlayer.m */,
+			);
+			path = GKVideoPlayer;
+			sourceTree = "<group>";
+		};
+		B47A892A14CF9456582214B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EAC4189E22B1077467BAECA /* Pods_GKDubbingDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE07743CF90F1E6A9A18E588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2139C1AEE0AFFBB85D44D5A8 /* Pods-GKDubbingDemo.debug.xcconfig */,
+				6452B6C984A7C0E110FFDDB5 /* Pods-GKDubbingDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7944C2E7218DE8A70058B31E /* GKDubbingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7944C314218DE8A80058B31E /* Build configuration list for PBXNativeTarget "GKDubbingDemo" */;
+			buildPhases = (
+				17A1F75AA1AB6B277152F910 /* [CP] Check Pods Manifest.lock */,
+				7944C2E4218DE8A70058B31E /* Sources */,
+				7944C2E5218DE8A70058B31E /* Frameworks */,
+				7944C2E6218DE8A70058B31E /* Resources */,
+				560A36E515851C2ADEA0A427 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKDubbingDemo;
+			productName = GKDubbingDemo;
+			productReference = 7944C2E8218DE8A70058B31E /* GKDubbingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7944C2FF218DE8A80058B31E /* GKDubbingDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7944C317218DE8A80058B31E /* Build configuration list for PBXNativeTarget "GKDubbingDemoTests" */;
+			buildPhases = (
+				7944C2FC218DE8A80058B31E /* Sources */,
+				7944C2FD218DE8A80058B31E /* Frameworks */,
+				7944C2FE218DE8A80058B31E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7944C302218DE8A80058B31E /* PBXTargetDependency */,
+			);
+			name = GKDubbingDemoTests;
+			productName = GKDubbingDemoTests;
+			productReference = 7944C300218DE8A80058B31E /* GKDubbingDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7944C30A218DE8A80058B31E /* GKDubbingDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7944C31A218DE8A80058B31E /* Build configuration list for PBXNativeTarget "GKDubbingDemoUITests" */;
+			buildPhases = (
+				7944C307218DE8A80058B31E /* Sources */,
+				7944C308218DE8A80058B31E /* Frameworks */,
+				7944C309218DE8A80058B31E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7944C30D218DE8A80058B31E /* PBXTargetDependency */,
+			);
+			name = GKDubbingDemoUITests;
+			productName = GKDubbingDemoUITests;
+			productReference = 7944C30B218DE8A80058B31E /* GKDubbingDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7944C2E0218DE8A70058B31E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = QuintGao;
+				TargetAttributes = {
+					7944C2E7218DE8A70058B31E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7944C2FF218DE8A80058B31E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7944C2E7218DE8A70058B31E;
+					};
+					7944C30A218DE8A80058B31E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7944C2E7218DE8A70058B31E;
+					};
+				};
+			};
+			buildConfigurationList = 7944C2E3218DE8A70058B31E /* Build configuration list for PBXProject "GKDubbingDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7944C2DF218DE8A70058B31E;
+			productRefGroup = 7944C2E9218DE8A70058B31E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7944C2E7218DE8A70058B31E /* GKDubbingDemo */,
+				7944C2FF218DE8A80058B31E /* GKDubbingDemoTests */,
+				7944C30A218DE8A80058B31E /* GKDubbingDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7944C2E6218DE8A70058B31E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7944C2F8218DE8A80058B31E /* LaunchScreen.storyboard in Resources */,
+				7944C2F5218DE8A80058B31E /* Assets.xcassets in Resources */,
+				7944C328218DE9760058B31E /* eff.bundle in Resources */,
+				7944C327218DE9760058B31E /* test.mp4 in Resources */,
+				60EE04E72190209C006B4159 /* bgm.m4a in Resources */,
+				7944C325218DE9760058B31E /* effmusicinfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944C2FE218DE8A80058B31E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944C309218DE8A80058B31E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17A1F75AA1AB6B277152F910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GKDubbingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		560A36E515851C2ADEA0A427 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/GKMessageTool/GKMessageTool.framework",
+				"${BUILT_PRODUCTS_DIR}/GKNavigationBarViewController/GKNavigationBarViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKMessageTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationBarViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7944C2E4218DE8A70058B31E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7944C33A218DEA5D0058B31E /* GKVideoPlayer.m in Sources */,
+				7944C2FB218DE8A80058B31E /* main.m in Sources */,
+				7994AA4D218EEE5E00B9B251 /* GKEffectCollectionViewCell.m in Sources */,
+				7944C337218DE9AF0058B31E /* GKDubbingManager.m in Sources */,
+				7944C333218DE9960058B31E /* GKDubbingPublishViewController.m in Sources */,
+				7944C332218DE9960058B31E /* GKDubbingRecordViewController.m in Sources */,
+				7944C340218EBEC30058B31E /* GKButton.m in Sources */,
+				7944C334218DE9960058B31E /* GKBaseViewController.m in Sources */,
+				7944C2ED218DE8A70058B31E /* AppDelegate.m in Sources */,
+				7944C331218DE9960058B31E /* GKDubbingEditViewController.m in Sources */,
+				7944C344218EC3130058B31E /* GKSliderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944C2FC218DE8A80058B31E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7944C305218DE8A80058B31E /* GKDubbingDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944C307218DE8A80058B31E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7944C310218DE8A80058B31E /* GKDubbingDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7944C302218DE8A80058B31E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7944C2E7218DE8A70058B31E /* GKDubbingDemo */;
+			targetProxy = 7944C301218DE8A80058B31E /* PBXContainerItemProxy */;
+		};
+		7944C30D218DE8A80058B31E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7944C2E7218DE8A70058B31E /* GKDubbingDemo */;
+			targetProxy = 7944C30C218DE8A80058B31E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7944C2F6218DE8A80058B31E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7944C2F7218DE8A80058B31E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7944C312218DE8A80058B31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7944C313218DE8A80058B31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7944C315218DE8A80058B31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2139C1AEE0AFFBB85D44D5A8 /* Pods-GKDubbingDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X52753HQNM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GKDubbingDemo",
+				);
+				GCC_PREFIX_HEADER = GKDubbingDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = GKDubbingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.GKDubbingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = aystfm_dev_test;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7944C316218DE8A80058B31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6452B6C984A7C0E110FFDDB5 /* Pods-GKDubbingDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X52753HQNM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GKDubbingDemo",
+				);
+				GCC_PREFIX_HEADER = GKDubbingDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = GKDubbingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.GKDubbingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = aystfm_dev_test;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7944C318218DE8A80058B31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GKDubbingDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiyinsitanfm.GKDubbingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKDubbingDemo.app/GKDubbingDemo";
+			};
+			name = Debug;
+		};
+		7944C319218DE8A80058B31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GKDubbingDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiyinsitanfm.GKDubbingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKDubbingDemo.app/GKDubbingDemo";
+			};
+			name = Release;
+		};
+		7944C31B218DE8A80058B31E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GKDubbingDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiyinsitanfm.GKDubbingDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GKDubbingDemo;
+			};
+			name = Debug;
+		};
+		7944C31C218DE8A80058B31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GKDubbingDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiyinsitanfm.GKDubbingDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GKDubbingDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7944C2E3218DE8A70058B31E /* Build configuration list for PBXProject "GKDubbingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7944C312218DE8A80058B31E /* Debug */,
+				7944C313218DE8A80058B31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7944C314218DE8A80058B31E /* Build configuration list for PBXNativeTarget "GKDubbingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7944C315218DE8A80058B31E /* Debug */,
+				7944C316218DE8A80058B31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7944C317218DE8A80058B31E /* Build configuration list for PBXNativeTarget "GKDubbingDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7944C318218DE8A80058B31E /* Debug */,
+				7944C319218DE8A80058B31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7944C31A218DE8A80058B31E /* Build configuration list for PBXNativeTarget "GKDubbingDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7944C31B218DE8A80058B31E /* Debug */,
+				7944C31C218DE8A80058B31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7944C2E0218DE8A70058B31E /* Project object */;
+}

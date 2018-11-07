@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>eff15</key>
+	<string>UHOH</string>
+	<key>eff14</key>
+	<string>转场C</string>
+	<key>eff13</key>
+	<string>转场B</string>
+	<key>eff12</key>
+	<string>转场A</string>
+	<key>eff11</key>
+	<string>小孩哭B</string>
+	<key>eff10</key>
+	<string>小孩哭A</string>
+	<key>eff9</key>
+	<string>乌鸦</string>
+	<key>eff8</key>
+	<string>吐舌头</string>
+	<key>eff7</key>
+	<string>起哄</string>
+	<key>eff6</key>
+	<string>雷声</string>
+	<key>eff5</key>
+	<string>惊叹</string>
+	<key>eff4</key>
+	<string>欢呼</string>
+	<key>eff3</key>
+	<string>鼓掌</string>
+	<key>eff2</key>
+	<string>狗叫</string>
+	<key>eff1</key>
+	<string>风声</string>
+	<key>eff0</key>
+	<string>爆笑</string>
+</dict>
+</plist>
