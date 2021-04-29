@@ -134,7 +134,7 @@
     [[GKAudioRecorder sharedInstance] stopPlayAudio];
     [self.player pause];
     
-    [[GKAudioRecorder sharedInstance] finishRecordWithPath:kDubbingRecordPath progress:^(float progress) {
+    [[GKAudioRecorder sharedInstance] finishRecordWithPath:kDubbingRecordPath bgmPath:self.bgmPath progress:^(float progress) {
         NSLog(@"录音合成进度：%f", progress);
     } success:^{
         NSLog(@"录音合成成功");
@@ -188,7 +188,8 @@
         
         // 开始录制背景音乐
         [[GKAudioRecorder sharedInstance] startPlayAudioWithPath:self.bgmPath time:0 finished:^{}];
-        [[GKAudioRecorder sharedInstance] openBGMRecord];
+//        [[GKAudioRecorder sharedInstance] openBGMRecord];
+//        [[GKAudioRecorder sharedInstance] closeBGMRecord];
         
         [[GKAudioRecorder sharedInstance] startRecordWithSuccess:^{
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -299,7 +300,7 @@
         [_finishBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _finishBtn.titleLabel.font = [UIFont systemFontOfSize:15.0f];
         [_finishBtn addTarget:self action:@selector(finishAction:) forControlEvents:UIControlEventTouchUpInside];
-        _finishBtn.hidden = YES;
+//        _finishBtn.hidden = YES;
     }
     return _finishBtn;
 }

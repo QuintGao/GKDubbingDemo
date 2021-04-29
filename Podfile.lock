@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - GKAudioRecorder (1.0.0)
+  - GKMessageTool (1.0.5):
+    - MBProgressHUD
+  - GKNavigationBarViewController (3.0.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - TXLiteAVSDK_Player (8.5.10028)
+
+DEPENDENCIES:
+  - AFNetworking
+  - GKAudioRecorder
+  - GKMessageTool
+  - GKNavigationBarViewController
+  - Masonry
+  - TXLiteAVSDK_Player
+
+SPEC REPOS:
+  https://github.com/CodingGK/GKSpecs.git:
+    - GKAudioRecorder
+  trunk:
+    - AFNetworking
+    - GKMessageTool
+    - GKNavigationBarViewController
+    - Masonry
+    - MBProgressHUD
+    - TXLiteAVSDK_Player
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  GKAudioRecorder: 2bbf95020ad2ee123eaf99639b7aed88b94abee5
+  GKMessageTool: fcf46cca30f62eaebb8fea288c9452f3682645f2
+  GKNavigationBarViewController: 4dd063a91d1dd991174bbc8a669acc53d0f5cec5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  TXLiteAVSDK_Player: cf0fe0d685b0cc27ca6cade00f4f407cd1b0fe24
+
+PODFILE CHECKSUM: 250db0969430f97c8de2bc81c0f7bf1c8a2e937a
+
+COCOAPODS: 1.10.1

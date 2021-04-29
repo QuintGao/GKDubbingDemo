@@ -1,6 +1,0 @@
-framework module GKAudioRecorder {
-  umbrella header "GKAudioRecorder.h"
-
-  export *
-  module * { export * }
-}

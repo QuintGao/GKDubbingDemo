@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		60EE04E72190209C006B4159 /* bgm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 60EE04E62190209C006B4159 /* bgm.m4a */; };
-		60EE052321928571006B4159 /* GKAudioRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EE052221928571006B4159 /* GKAudioRecorder.framework */; };
 		7944C2ED218DE8A70058B31E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7944C2EC218DE8A70058B31E /* AppDelegate.m */; };
 		7944C2F5218DE8A80058B31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7944C2F4218DE8A80058B31E /* Assets.xcassets */; };
 		7944C2F8218DE8A80058B31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7944C2F6218DE8A80058B31E /* LaunchScreen.storyboard */; };
@@ -51,7 +50,6 @@
 		0EAC4189E22B1077467BAECA /* Pods_GKDubbingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKDubbingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2139C1AEE0AFFBB85D44D5A8 /* Pods-GKDubbingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKDubbingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		60EE04E62190209C006B4159 /* bgm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bgm.m4a; sourceTree = "<group>"; };
-		60EE052221928571006B4159 /* GKAudioRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GKAudioRecorder.framework; sourceTree = "<group>"; };
 		6452B6C984A7C0E110FFDDB5 /* Pods-GKDubbingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKDubbingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7944C2E8218DE8A70058B31E /* GKDubbingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKDubbingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7944C2EB218DE8A70058B31E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0DB73084B25FCD9E0F2784 /* Pods_GKDubbingDemo.framework in Frameworks */,
-				60EE052321928571006B4159 /* GKAudioRecorder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +148,6 @@
 				7944C2F9218DE8A80058B31E /* Info.plist */,
 				7944C2FA218DE8A80058B31E /* main.m */,
 				7944C348218ED4310058B31E /* PrefixHeader.pch */,
-				60EE052221928571006B4159 /* GKAudioRecorder.framework */,
 			);
 			path = GKDubbingDemo;
 			sourceTree = "<group>";
@@ -421,25 +417,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/GKMessageTool/GKMessageTool.framework",
-				"${BUILT_PRODUCTS_DIR}/GKNavigationBarViewController/GKNavigationBarViewController.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKMessageTool.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationBarViewController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GKDubbingDemo/Pods-GKDubbingDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
