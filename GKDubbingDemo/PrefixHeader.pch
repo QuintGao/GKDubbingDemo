@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  GKDubbingDemo
+//
+//  Created by QuintGao on 2018/11/4.
+//  Copyright © 2018 QuintGao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */

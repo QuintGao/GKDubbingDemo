@@ -17,7 +17,11 @@ PODS:
   - GKAudioRecorder (1.0.0)
   - GKMessageTool (1.0.5):
     - MBProgressHUD
-  - GKNavigationBarViewController (3.0.1)
+  - GKNavigationBar (1.5.7):
+    - GKNavigationBar/GestureHandle (= 1.5.7)
+    - GKNavigationBar/NavigationBar (= 1.5.7)
+  - GKNavigationBar/GestureHandle (1.5.7)
+  - GKNavigationBar/NavigationBar (1.5.7)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - TXLiteAVSDK_Player (8.5.10028)
@@ -26,17 +30,18 @@ DEPENDENCIES:
   - AFNetworking
   - GKAudioRecorder
   - GKMessageTool
-  - GKNavigationBarViewController
+  - GKNavigationBar
   - Masonry
   - TXLiteAVSDK_Player
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GKNavigationBar
   https://github.com/CodingGK/GKSpecs.git:
     - GKAudioRecorder
   trunk:
     - AFNetworking
     - GKMessageTool
-    - GKNavigationBarViewController
     - Masonry
     - MBProgressHUD
     - TXLiteAVSDK_Player
@@ -45,11 +50,11 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   GKAudioRecorder: 2bbf95020ad2ee123eaf99639b7aed88b94abee5
   GKMessageTool: fcf46cca30f62eaebb8fea288c9452f3682645f2
-  GKNavigationBarViewController: 4dd063a91d1dd991174bbc8a669acc53d0f5cec5
+  GKNavigationBar: a09106dc614e6a458d5c64048e7945a47a266fb8
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   TXLiteAVSDK_Player: cf0fe0d685b0cc27ca6cade00f4f407cd1b0fe24
 
-PODFILE CHECKSUM: 250db0969430f97c8de2bc81c0f7bf1c8a2e937a
+PODFILE CHECKSUM: 457530a913a121b153a21ec4288e84e6d11c3797
 
 COCOAPODS: 1.10.1
